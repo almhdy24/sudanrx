@@ -24,8 +24,14 @@ jobs:
         with:
           flutter-version: 3.24.0
 
+      - name: Backup pubspec.yaml
+        run: cp pubspec.yaml pubspec.yaml.bak
+
       - name: Recreate Flutter project structure
-        run: flutter create .
+        run: flutter create . --project-name sudanrx
+
+      - name: Restore pubspec.yaml
+        run: cp pubspec.yaml.bak pubspec.yaml
 
       - name: Install dependencies
         run: flutter pub get
