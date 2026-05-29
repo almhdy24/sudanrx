@@ -1,4 +1,4 @@
-name: sudanrx
+name: sudanrx_app
 description: SudanRx - Community-driven medical guidelines for Sudan
 publish_to: 'none'
 version: 1.0.0+1
